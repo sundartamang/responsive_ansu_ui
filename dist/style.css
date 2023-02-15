@@ -639,9 +639,8 @@ input:focus {
     top: 87px;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
+    z-index: 2 !important;
+    background-color: green !important;
   }
   .header .header__responsive .header__responsive_menu_more ul li .responsive_anchor {
     color: var(--menu_color) !important;
@@ -672,7 +671,6 @@ input:focus {
 .custom_jumbotron {
   height: 264px;
   background: url("../img/jumboturn.png") repeat, rgba(255, 255, 255, 0.3);
-  background: rgba(255, 255, 255, 0.3);
   display: grid;
   place-items: center;
 }
@@ -693,6 +691,7 @@ input:focus {
 }
 .custom_jumbotron .custom_jumbotron__wrapper .searchbar_wrapper .input_container {
   position: relative;
+  z-index: 1 !important;
 }
 .custom_jumbotron .custom_jumbotron__wrapper .searchbar_wrapper .input_container img {
   height: 50%;
