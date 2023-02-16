@@ -1034,16 +1034,17 @@ custom-nav .owl-next i {
   box-shadow: none !important;
 }
 
-@media only screen and (min-width: 1619px) and (max-width: 1759px) {
+@media only screen and (min-width: 1619px) and (max-width: 1808px) {
   .research__wrapper_column_right .chart_header_wrapper .nav-tabs .nav-item {
     padding-bottom: 0;
   }
   .research__wrapper_column_right .chart_header_wrapper .nav-tabs .nav-item .nav-link {
     padding-left: 3px !important;
+    color: red !important;
     padding-right: 3px !important;
   }
 }
-@media only screen and (min-width: 991px) and (max-width: 1144px) {
+@media only screen and (min-width: 991px) {
   .research__wrapper_column_right .chart_header_wrapper .nav-tabs .nav-item {
     padding-bottom: 0;
   }

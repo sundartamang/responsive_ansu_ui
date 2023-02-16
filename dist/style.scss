@@ -1277,7 +1277,7 @@ custom-nav {
 
 }
 
-@media only screen and (min-width: 1619px) and (max-width: 1759px) {
+@media only screen and (min-width: 1619px) and (max-width: 1808px) {
     .research__wrapper_column_right {
         .chart_header_wrapper {
 
@@ -1287,6 +1287,7 @@ custom-nav {
 
                     .nav-link {
                         padding-left: 3px !important;
+                        color: red !important;
                         padding-right: 3px !important;
                     }
                 }
@@ -1298,7 +1299,7 @@ custom-nav {
 
 }
 
-@media only screen and (min-width: 991px) and (max-width: 1144px) {
+@media only screen and (min-width: 991px){
     .research__wrapper_column_right {
         .chart_header_wrapper {
 
