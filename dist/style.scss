@@ -529,6 +529,19 @@ input {
     margin-right: 0px !important;
 }
 
+
+.owl-prev {
+    position: absolute;
+    left: -20px;
+}
+
+.owl-next {
+    position: absolute;
+    right: -20px;
+}
+
+
+
 @media (max-width: 768px) {}
 
 @media (max-width: 425) {}
@@ -1076,47 +1089,137 @@ custom-nav {
         width: 100%;
 
         .research__wrapper_column_left {
-            background-color: green;
             height: 100%;
             width: 100%;
             padding-top: 20px;
             padding-bottom: 20px;
+            
+
+            .crasoul_wrapper {
+                width: 100%;
+
+                .crasoul_wrapper__header {
+                    height: auto;
+                    min-height: 73px;
+                    // height: 73px;
+
+                    .description_info {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .view_all {
+                            cursor: pointer;
+                            justify-content: flex-end;
+                        }
+                    }
+                }
+
+                .crasoul_wrapper__body {
+                    display: grid;
+                    // grid-column-gap: 30px;
+                    // column-gap: 30px;
+                    // padding-left: 40px;
+                    // padding-right: 40px;
+                    // padding-left: 20px;
+                    // padding-right: 20px;
+                    margin-top: 28px;
+                    height: auto;
+                    min-height: 401px;
+
+
+
+                    .owl-nav {
+                        top: 40%;
+
+                        .owl-prev {
+                            top: 30%;
+                            left: -20px;
+                        }
+
+                        .owl-next {
+                            top: 30%;
+                            right: -20px;
+                        }
+
+                        button {
+                            background-color: #fff;
+                            border: 0px !important;
+                            cursor: pointer;
+                            outline: none !important;
+                        }
+                    }
+
+                    .item {
+                        border-radius: 10px;
+                        height: 100%;
+                        border: 1px solid rgb(74 74 74 / 20%);
+
+                        img {
+                            height: 133px;
+                            border-radius: 10px 10px 0px 0px;
+                        }
+
+                        .owl-carousel__body {
+                            padding: 15px 15px 0px 15px;
+                            height: auto;
+                            min-height: 100px;
+
+                            .button_wrapper {
+                                position: relative;
+                                margin-top: 25px;
+                                display: flex;
+                                justify-content: center;
+                                align-items: flex-end;
+                            }
+
+                            .read_more_btn {
+                                margin-top: 25px;
+                            }
+                        }
+                    }
+                }
+            }
         }
 
         .research__wrapper_column_right {
-            background-color: pink;
-            // height: 100%;
             width: 100%;
             padding-top: 20px;
             padding-bottom: 20px;
 
-
             .market_wrapper {
-                // padding-left: 25px;
-                // padding-right: 25px;
-                overflow: hidden;
-                border-radius: 10px;
-                height: auto;
-                min-height: 300px;
+                width: 100%;
 
                 .market_wrapper__header {
-                    height: auto;
-                    min-height: 73px;
+                    // height: auto;
+                    // min-height: 73px;
+
+                    .description_info {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .view_all {
+                            cursor: pointer;
+                            justify-content: flex-end;
+                        }
+                    }
                 }
 
                 .market_wrapper__body {
                     margin-top: 28px;
-                    height: auto;
-                    min-height: 401px;
+                    // margin-top: 20px;
+                    // height: auto;
+                    // min-height: 401px;
+                    height: 100%;
                     border-radius: 10px;
                     border-bottom-right-radius: 0px;
                     border-bottom-left-radius: 0px;
                     box-shadow: 0 0 14px 0 rgb(74 74 74 / 20%);
-                    background-color: red;
+                    border: 1px solid rgb(74 74 74 / 20%);
 
                     .item {
-                        height: auto;
-                        min-height: 401px;
+                        // height: auto;
+                        // min-height: 401px;
+                        height: 100%;
                         width: 100%;
 
                         .chart_header_wrapper {
@@ -1180,87 +1283,6 @@ custom-nav {
         }
     }
 
-    .crasoul_wrapper {
-        width: 100%;
-
-        .crasoul_wrapper__header {
-            // height: auto;
-            // min-height: 73px;
-            height: 73px;
-
-            .description_info {
-                display: flex;
-                justify-content: space-between;
-
-                .view_all {
-                    cursor: pointer;
-                    justify-content: flex-end;
-                }
-            }
-        }
-
-        .crasoul_wrapper__body {
-            display: grid;
-            grid-column-gap: 30px;
-            column-gap: 30px;
-            padding-left: 40px;
-            padding-right: 40px;
-            margin-top: 28px;
-            height: auto;
-            min-height: 431px;
-
-            .owl-nav {
-                top: 40%;
-
-                .owl-prev {
-                    top: 30%;
-                    left: 0%;
-                }
-
-                .owl-next {
-                    top: 30%;
-                    right: 0%;
-                }
-
-                button {
-                    background-color: #fff;
-                    border: 0px !important;
-                    cursor: pointer;
-                    outline: none !important;
-                }
-            }
-
-            .item {
-                border-radius: 10px;
-                height: 100%;
-
-
-
-                img {
-                    height: 133px;
-                    border-radius: 10px 10px 0px 0px;
-                }
-
-                .owl-carousel__body {
-                    padding: 15px 15px 0px 15px;
-                    height: auto;
-                    min-height: 100px;
-
-                    .button_wrapper {
-                        position: relative;
-                        margin-top: 25px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: flex-end;
-                    }
-
-                    .read_more_btn {
-                        margin-top: 25px;
-                    }
-                }
-            }
-        }
-    }
 
 }
 
@@ -1284,27 +1306,6 @@ custom-nav {
     }
 
 }
-@media only screen and (min-width: 1024px) and (max-width: 1604px) {
-    .research__wrapper_column_right {
-        .chart_header_wrapper {
-
-            .nav-tabs {
-                .nav-item {
-                    padding-bottom: 0;
-
-                    .nav-link {
-                        padding-left: 2px !important;
-                        color: red;
-                        padding-right: 2px !important;
-                    }
-                }
-            }
-
-        }
-
-    }
-
-}
 
 @media only screen and (min-width: 991px) and (max-width: 1144px) {
     .research__wrapper_column_right {
@@ -1315,8 +1316,8 @@ custom-nav {
                     padding-bottom: 0;
 
                     .nav-link {
-                        padding-left: 3px !important;
-                        padding-right: 3px !important;
+                        padding-left: 2px !important;
+                        padding-right: 2px !important;
                     }
                 }
             }

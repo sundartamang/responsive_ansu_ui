@@ -12,6 +12,10 @@ $(function () {
               items:1,
               nav:true
           },
+          696:{
+            items:2,
+            nav:true
+          },
           
           991:{
             items:2,
