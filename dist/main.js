@@ -6,7 +6,22 @@ $(function () {
         items: 3,
         margin: 30,
         loop: true,
-        nav: true
+        nav: true,
+        responsive:{
+          0:{
+              items:1,
+              nav:true
+          },
+          
+          991:{
+            items:2,
+            nav:true
+          },
+          1030:{
+            items:3,
+            nav:true
+        },
+      }
     });
 
     var newsOwl = $("#newsOwlCarousel");

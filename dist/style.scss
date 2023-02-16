@@ -524,6 +524,16 @@ input {
     background: none;
 }
 
+.remove_row_margin {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 425) {}
+
+/*********************************************BASIC CSS END HERE*********************************************************/
 
 
 
@@ -672,7 +682,8 @@ input {
             display: flex;
             justify-content: space-around;
             column-gap: 3px;
-            z-index: 99999;
+            position: relative;
+            z-index: 1;
 
 
 
@@ -707,10 +718,7 @@ input {
                 top: 87px;
                 box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
                 position: fixed;
-                z-index: 2 !important;
-                background-color: green !important;
-
-
+                z-index: 1;
 
                 ul li {
                     .responsive_anchor {
@@ -748,21 +756,21 @@ input {
 }
 
 @media (max-width: 375px) {
-    .regular_text_four {
-        font-size: 8px !important;
-    }
+    // .regular_text_four {
+    //     font-size: 8px !important;
+    // }
 
-    .main_btn {
-        font-size: 8px !important;
-        line-height: 16px !important;
-    }
+    // .main_btn {
+    //     font-size: 8px !important;
+    //     line-height: 16px !important;
+    // }
 }
 
 
 /*********************************************jumbrotron css start*********************************************************/
 .custom_jumbotron {
     height: 264px;
-    background: url('../img/jumboturn.png') repeat, rgba(255, 255, 255, 0.3);
+    // background: url('../img/jumboturn.png') repeat, rgba(255, 255, 255, 0.3);
     display: grid;
     place-items: center;
 
@@ -775,6 +783,8 @@ input {
 
     .custom_jumbotron__wrapper {
         opacity: 1 !important;
+        position: relative;
+        z-index: 1;
 
         .image_wrapper {
             display: flex;
@@ -792,7 +802,7 @@ input {
 
             .input_container {
                 position: relative;
-                z-index: 1 !important;
+                z-index: 0;
 
                 img {
                     height: 50%;
@@ -944,3 +954,432 @@ input {
 }
 
 /*********************************************jumbrotron css end*********************************************************/
+
+
+/*********************************************owl carousel css start*********************************************************/
+.owl-item {
+    box-shadow: 0;
+    transition: 1s all;
+    webkit-transition: 1s all;
+}
+
+.owl-item.active {
+    box-shadow: 0 0 14px 0 rgba(74, 74, 74, 0.20);
+}
+
+.owl-prev {
+    position: absolute;
+    left: 0;
+    top: 40%;
+
+    span {
+        font-size: 32px;
+        color: #3F434A;
+    }
+}
+
+.owl-next {
+    position: absolute;
+    right: 0;
+    top: 40%;
+
+    span {
+        font-size: 32px;
+        color: #3F434A;
+    }
+}
+
+.owl-dots {
+    display: none;
+}
+
+.owl-nav {
+    top: 40%;
+
+    .owl-prev {
+        top: 23%;
+        left: 3%;
+    }
+
+    .owl-next {
+        top: 23%;
+        right: 3%;
+    }
+
+    button {
+        background-color: #fff;
+        border: 0px !important;
+        cursor: pointer;
+        outline: none !important;
+    }
+}
+
+custom-nav {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+
+    .owl-prev {
+        position: absolute;
+        height: 100px;
+        color: inherit;
+        background: none;
+        border: none;
+        z-index: 100;
+        left: 0;
+
+        i {
+            font-size: 2.5rem;
+            color: #cecece;
+        }
+    }
+
+    .owl-next {
+        position: absolute;
+        height: 100px;
+        color: inherit;
+        background: none;
+        border: none;
+        z-index: 100;
+        right: 0;
+
+        i {
+            font-size: 2.5rem;
+            color: #cecece;
+        }
+    }
+}
+
+/*********************************************owl carousel css start*********************************************************/
+
+
+
+/*********************************************Research and opinion section csss start*********************************************************/
+.research {
+    height: auto;
+    min-height: 531px;
+    left: 0px;
+    top: 356px;
+    background: var(--p_color_four);
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.research__wrapper {
+    // background-color: red !important;
+
+    .research__wrapper_row {
+        // background-color: red !important;
+        height: 100%;
+        width: 100%;
+
+        .research__wrapper_column_left {
+            background-color: green;
+            height: 100%;
+            width: 100%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .research__wrapper_column_right {
+            background-color: pink;
+            // height: 100%;
+            width: 100%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+
+            .market_wrapper {
+                // padding-left: 25px;
+                // padding-right: 25px;
+                overflow: hidden;
+                border-radius: 10px;
+                height: auto;
+                min-height: 300px;
+
+                .market_wrapper__header {
+                    height: auto;
+                    min-height: 73px;
+                }
+
+                .market_wrapper__body {
+                    margin-top: 28px;
+                    height: auto;
+                    min-height: 401px;
+                    border-radius: 10px;
+                    border-bottom-right-radius: 0px;
+                    border-bottom-left-radius: 0px;
+                    box-shadow: 0 0 14px 0 rgb(74 74 74 / 20%);
+                    background-color: red;
+
+                    .item {
+                        height: auto;
+                        min-height: 401px;
+                        width: 100%;
+
+                        .chart_header_wrapper {
+
+                            .nav-tabs {
+                                .nav-item {
+                                    padding-bottom: 0;
+
+                                    .nav-link {
+                                        display: block;
+                                        padding: 0px;
+                                        border: 0;
+                                        position: relative;
+                                        text-transform: capitalize;
+                                        letter-spacing: .5px;
+                                        padding: 0.5rem 0.8rem;
+                                        color: #4F4F4F;
+                                        -webkit-transition: all 300ms ease-in-out;
+                                        transition: all 300ms ease-in-out;
+                                    }
+                                }
+                            }
+
+                            .nav-link.active {
+                                background-color: var(--p_color_four);
+                                box-shadow: none !important;
+                                border: 0px;
+                                border-bottom: 2px solid var(--button_color) !important;
+                            }
+                        }
+
+                        ul {
+                            display: flex;
+                            justify-content: space-between;
+
+                            li {
+                                padding-top: 10px;
+
+                                a {
+                                    color: var(--button_color);
+                                }
+                            }
+                        }
+
+                        .chart_body_wrapper {
+                            .item {
+                                padding: 15px;
+                                border-radius: 0px;
+
+                                .table-content {
+                                    .tab-pane.active {
+                                        box-shadow: none !important;
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .crasoul_wrapper {
+        width: 100%;
+
+        .crasoul_wrapper__header {
+            // height: auto;
+            // min-height: 73px;
+            height: 73px;
+
+            .description_info {
+                display: flex;
+                justify-content: space-between;
+
+                .view_all {
+                    cursor: pointer;
+                    justify-content: flex-end;
+                }
+            }
+        }
+
+        .crasoul_wrapper__body {
+            display: grid;
+            grid-column-gap: 30px;
+            column-gap: 30px;
+            padding-left: 40px;
+            padding-right: 40px;
+            margin-top: 28px;
+            height: auto;
+            min-height: 431px;
+
+            .owl-nav {
+                top: 40%;
+
+                .owl-prev {
+                    top: 30%;
+                    left: 0%;
+                }
+
+                .owl-next {
+                    top: 30%;
+                    right: 0%;
+                }
+
+                button {
+                    background-color: #fff;
+                    border: 0px !important;
+                    cursor: pointer;
+                    outline: none !important;
+                }
+            }
+
+            .item {
+                border-radius: 10px;
+                height: 100%;
+
+
+
+                img {
+                    height: 133px;
+                    border-radius: 10px 10px 0px 0px;
+                }
+
+                .owl-carousel__body {
+                    padding: 15px 15px 0px 15px;
+                    height: auto;
+                    min-height: 100px;
+
+                    .button_wrapper {
+                        position: relative;
+                        margin-top: 25px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-end;
+                    }
+
+                    .read_more_btn {
+                        margin-top: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1619px) and (max-width: 1759px) {
+    .research__wrapper_column_right {
+        .chart_header_wrapper {
+
+            .nav-tabs {
+                .nav-item {
+                    padding-bottom: 0;
+
+                    .nav-link {
+                        padding-left: 3px !important;
+                        padding-right: 3px !important;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+}
+@media only screen and (min-width: 1024px) and (max-width: 1604px) {
+    .research__wrapper_column_right {
+        .chart_header_wrapper {
+
+            .nav-tabs {
+                .nav-item {
+                    padding-bottom: 0;
+
+                    .nav-link {
+                        padding-left: 2px !important;
+                        color: red;
+                        padding-right: 2px !important;
+                    }
+                }
+            }
+
+        }
+
+    }
+
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1144px) {
+    .research__wrapper_column_right {
+        .chart_header_wrapper {
+
+            .nav-tabs {
+                .nav-item {
+                    padding-bottom: 0;
+
+                    .nav-link {
+                        padding-left: 3px !important;
+                        padding-right: 3px !important;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 787px) {
+    .research__wrapper_column_right {
+        .chart_header_wrapper {
+
+            .nav-tabs {
+                .nav-item {
+                    padding-bottom: 0;
+
+                    .nav-link {
+                        padding-left: 5px !important;
+                        padding-right: 5px !important;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media only screen and (min-width: 575px) and (max-width: 755px) {
+    .research__wrapper_column_right {
+        .chart_header_wrapper {
+
+            .nav-tabs {
+                .nav-item {
+                    padding-bottom: 0;
+
+                    .nav-link {
+                        padding-left: 0px !important;
+                        padding-right: 0px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 394px) {
+    .research__wrapper_column_right {
+        .chart_header_wrapper {
+
+            .nav-tabs {
+                .nav-item {
+                    padding-bottom: 0;
+
+                    .nav-link {
+                        padding-left: 5px !important;
+                        padding-right: 5px !important;
+                        font-size: 13px !important;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+/*********************************************Research and opinion section csss end*********************************************************/
