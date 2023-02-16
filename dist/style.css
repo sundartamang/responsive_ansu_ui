@@ -980,16 +980,11 @@ custom-nav .owl-next i {
 .research__wrapper .research__wrapper_row .research__wrapper_column_right .market_wrapper {
   width: 100%;
 }
-.research__wrapper .research__wrapper_row .research__wrapper_column_right .market_wrapper .market_wrapper__header .description_info {
-  display: flex;
-  justify-content: space-between;
-}
-.research__wrapper .research__wrapper_row .research__wrapper_column_right .market_wrapper .market_wrapper__header .description_info .view_all {
-  cursor: pointer;
-  justify-content: flex-end;
+.research__wrapper .research__wrapper_row .research__wrapper_column_right .market_wrapper .market_wrapper__header {
+  height: 73px;
 }
 .research__wrapper .research__wrapper_row .research__wrapper_column_right .market_wrapper .market_wrapper__body {
-  margin-top: 28px;
+  margin-top: 39px;
   height: 100%;
   border-radius: 10px;
   border-bottom-right-radius: 0px;

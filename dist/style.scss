@@ -1192,20 +1192,11 @@ custom-nav {
                 .market_wrapper__header {
                     // height: auto;
                     // min-height: 73px;
-
-                    .description_info {
-                        display: flex;
-                        justify-content: space-between;
-
-                        .view_all {
-                            cursor: pointer;
-                            justify-content: flex-end;
-                        }
-                    }
+                    height: 73px;
                 }
 
                 .market_wrapper__body {
-                    margin-top: 28px;
+                    margin-top: 39px;
                     // margin-top: 20px;
                     // height: auto;
                     // min-height: 401px;
