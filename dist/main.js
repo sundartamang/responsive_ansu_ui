@@ -36,6 +36,16 @@ $(function () {
         nav: true
     });
 
+    
+
+    var newsOwlResponsive = $("#newsOwlCarouselRsponsive");
+    newsOwlResponsive.owlCarousel({
+        items: 1,
+        margin: 30,
+        loop: true,
+        nav: true
+    });
+
     var galleryOwl = $("#gallery");
     galleryOwl.owlCarousel({
         items: 5,
@@ -43,6 +53,8 @@ $(function () {
         loop: true,
         nav: true
     });
+
+    
 
     "use strict";
 
